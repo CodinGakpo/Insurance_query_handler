@@ -4,3 +4,4 @@ transformers
 djangorestframework
 django
 django-tailwind
+requests
