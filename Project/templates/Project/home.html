@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAG AI Assistant</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">RAG Assistant</h1>
+      <div>
+        <a href="#features" class="text-gray-600 hover:text-indigo-600 px-4">Features</a>
+        <a href="#chat" class="bg-indigo-600 text-white px-5 py-2 rounded-xl shadow hover:bg-indigo-700 transition">Chat Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-center py-24 bg-gradient-to-b from-white to-indigo-100">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Ask Smarter. Get Better Answers.</h2>
+    <p class="text-lg max-w-xl mx-auto text-gray-600 mb-8">Powered by Retrieval-Augmented Generation (RAG), our assistant finds and explains the most relevant information from your own data.</p>
+    <a href="#chat" class="bg-indigo-600 text-white px-8 py-3 rounded-xl text-lg shadow-lg hover:bg-indigo-700 transition-all">Try It Now</a>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="max-w-6xl mx-auto py-16 px-4 grid md:grid-cols-3 gap-8">
+    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold text-indigo-600 mb-2">Context-Aware</h3>
+      <p class="text-gray-600">Get answers grounded in your own data or documents, not just generic knowledge.</p>
+    </div>
+    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold text-indigo-600 mb-2">Fast & Smart</h3>
+      <p class="text-gray-600">Combines fast retrieval and intelligent generation for precise and concise responses.</p>
+    </div>
+    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold text-indigo-600 mb-2">Easy Integration</h3>
+      <p class="text-gray-600">Plug into your existing Django app with minimal configuration.</p>
+    </div>
+  </section>
+
+  <!-- Chat Call-to-Action -->
+  <section id="chat" class="bg-indigo-600 text-white py-20 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Try the Assistant?</h2>
+    <p class="text-lg mb-6">Start asking questions and see your data answer back.</p>
+    <a href="/rag-app/chat" class="bg-white text-indigo-600 px-8 py-3 text-lg font-semibold rounded-xl hover:bg-gray-100 transition">Go to Chat</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white py-6 text-center text-gray-500 text-sm">
+    &copy; 2025 RAG Assistant · All rights reserved
+  </footer>
+</body>
+</html>
