@@ -21,5 +21,5 @@ from .views import home
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',home,name='homepage'),
-    path('rag-app/',include('rag_app.urls')),
+    path('api/',include('rag_app.urls')),
 ]
