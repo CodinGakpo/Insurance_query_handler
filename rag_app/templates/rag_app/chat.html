@@ -1,0 +1,29 @@
+<!-- rag_app/templates/rag_app/chat.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RAG Chat</title>
+</head>
+<body>
+    <h2>Ask a Question</h2>
+    <form method="post" id="chat-form">
+        {% csrf_token %}
+        <input type="text" name="question" id="question" required>
+        <button type="submit">Ask</button>
+    </form>
+    <div id="answer"></div>
+
+    <script>
+    document.getElementById("chat-form").onsubmit = async function(e) {
+        e.preventDefault();
+        const formData = new FormData(this);
+        const response = await fetch("", {
+            method: "POST",
+            body: formData
+        });
+        const data = await response.json();
+        document.getElementById("answer").innerText = data.answer;
+    }
+    </script>
+</body>
+</html>
