@@ -1,0 +1,45 @@
+# Virtual environment
+venv/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django specific
+*.log
+db.sqlite3
+media/
+staticfiles/
+
+# Environment variables
+.env
+.env.*
+
+# VSCode and IDE settings
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Migrations (optional: you can track them if needed)
+**/migrations/*.pyc
+**/migrations/__pycache__/
+# Uncomment below if you want to ignore all migration files
+# **/migrations/*.py
+
+# Coverage and testing
+htmlcov/
+coverage.xml
+.tox/
+.nox/
+.pytest_cache/
+.pyre/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
