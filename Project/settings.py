@@ -25,7 +25,13 @@ SECRET_KEY = 'django-insecure-z80q-hugm2blhe6h*e4a%de23n(n88^*fzm2!pu!x2)ywz8z#@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+import os
+
+ALLOWED_HOSTS = ['localhost']
+
+render_host = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
+if render_host:
+    ALLOWED_HOSTS.append(render_host)
 
 
 # Application definition

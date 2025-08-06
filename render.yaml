@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: insurance_query_handler-1
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn Project.wsgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: Project.settings
+      - key: SECRET_KEY
+        value: "django-insecure-z80q-hugm2blhe6h*e4a%de23n(n88^*fzm2!pu!x2)ywz8z#@"
+      - key: DEBUG
+        value: False
